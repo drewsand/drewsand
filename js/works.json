@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Social Platzi",
+        "languages": "HTML-CSS-JAVASCRIPT",
+        "img": "./img/social-platzi.png" ,
+        "link": "https://demetrius233.github.io/social-platzi/" 
+    },
+    {
+        "name": "Red Social",
+        "languages": "HTML-CSS-JAVASCRIPT",
+        "img": "./img/red-social.png" ,
+        "link": "https://demetrius233.github.io/social-network-b/" 
+    },
+    {
+        "name": "Buy and sell",
+        "languages": "FRONTEND AND BACKEND",
+        "img": "./img/compraVenta.png" ,
+        "link": "#" 
+    }, 
+    {
+        "name": "EDCAMP",
+        "languages": "HTML-CSS-JAVASCRIPT",
+        "img": "./img/edCamp.png",
+        "link": "#"  
+    },
+    {
+        "name": "Delivery Web",
+        "languages": "HTML-CSS-JAVASCRIPT",
+        "img": "./img/delivery.png",
+        "link": "https://paradisepc.github.io/proyecto-adrian/" 
+    },
+    {
+        "name": "Blog",
+        "languages": "HTML-CSS-JAVASCRIPT",
+        "img": "./img/blog.png",
+        "link": "#"  
+    },
+    {
+        "name": "Blog panel",
+        "languages": "HTML-CSS-JAVASCRIPT", 
+        "img": "./img/dash-blog.png",
+        "link": "#"  
+         
+    },
+    {
+        "name": "Game",
+        "languages": "HTML-CSS-JAVASCRIPT", 
+        "img": "./img/rockPaper.png",
+        "link": "https://demetrius233.github.io/juego-ppt/"   
+    },
+    {
+        "name": "Dashboard",
+        "languages": "HTML-CSS-JAVASCRIPT", 
+        "img": "./img/dash-casual.png",
+        "link": "#" 
+    },
+    {
+        "name": "Platzi Config",
+        "languages": "HTML-CSS-JAVASCRIPT", 
+        "img": "./img/platziConfig.png",
+        "link": "https://paradisepc.github.io/paradisepc/"   
+    },
+    {
+        "name": "Inventory system",
+        "languages": "FRONTEND AND BACKEND", 
+        "img": "./img/solo-cejas.png",
+        "link": "#"   
+    }
+]
