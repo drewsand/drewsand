@@ -2,14 +2,17 @@
     const sectionAbout = document.querySelector(".about-me")
     const sectionSkill = document.querySelector(".skills")
 
-    const heightAbout = sectionAbout.getBoundingClientRect().top - 400
+    const heightAbout = sectionAbout.getBoundingClientRect().top - 550
     const heightSkill = sectionSkill.getBoundingClientRect().top - 300
+ 
 
     const progressSkillAll = [...d.querySelectorAll(".progress-skill")].forEach((el, i) => el.style.transitionDelay = `${i * 0.2}s` )
 
     /* scroll bar animation */
     let progress = document.querySelector(".progressBar")
     let totalHeight = document.body.scrollHeight - innerHeight 
+
+    const rocket = document.querySelector(".rocket")
 
     addEventListener("scroll", () => {
 
@@ -37,6 +40,15 @@
             d.querySelector(".skill-php").style.width = '57%'
             d.querySelector(".skill-sql").style.width = '59%'
             d.querySelector(".skill-wp").style.width = '55%'
+
+ 
+        }  
+
+        //SVG
+        if (scrollY > 50 && scrollY < 1000) {
+            document.querySelector(".cajas img").style.width = `${scrollY + 200}px`
         }
+ 
+ 
     }) 
 } )(document)
