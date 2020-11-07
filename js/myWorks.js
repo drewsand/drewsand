@@ -1,15 +1,13 @@
-const getData = async (  ) => {
+export const getData = async (  ) => {
     const request = await fetch("./js/works.json")
     const data = await request.json()
     return data
 }
 
-( async () => {
-
-
-    const datos = await getData()
+export const loadWorks =  (container, datos) => {
+   
     let html = ''
-    const works = document.querySelector(".container-works")
+ 
 
     datos.forEach(work => {
         html += `
@@ -29,7 +27,14 @@ const getData = async (  ) => {
         `
     });
 
-    works.innerHTML = html
+    container.innerHTML = html
+    return datos
+
+}
+
+( async () => {
+
+    const works = document.querySelector(".container-works")
 
     works.addEventListener("click", (e) => {
         
@@ -51,6 +56,5 @@ const getData = async (  ) => {
               })
               
         }
-    })
-    console.log(datos)
+    }) 
 })()

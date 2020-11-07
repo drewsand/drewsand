@@ -1,7 +1,12 @@
+import { loadWorks, getData } from './myWorks.js'
+
 ( (d) => {
+
+    const works = document.querySelector(".container-works")
+    const heightWork = works.getBoundingClientRect().top - 1000
+   
     const sectionAbout = document.querySelector(".about-me")
-    const sectionSkill = document.querySelector(".skills")
-    const sectionSkillRocket = document.querySelector(".skills")
+    const sectionSkill = document.querySelector(".skills") 
 
     const heightAbout = sectionAbout.getBoundingClientRect().top - 550
     const heightSkill = sectionSkill.getBoundingClientRect().top - 300
@@ -16,7 +21,10 @@
 
     const rocket = document.querySelector(".rocket")
 
-    addEventListener("scroll", () => {
+    //VARIABLE QUE VALIDA LA PRIMER ENTRADA A LA SECTIONDE TRABAJOS
+    let entrada = true
+
+    addEventListener("scroll", async () => {
 
         let progressHeight = (pageYOffset / totalHeight) * 100  
         progress.style.height = `${progressHeight}%`
@@ -60,11 +68,43 @@
             
         } 
 
+
+        
+        //LAZY LOADING TO THE IMAGES 
+        if (scrollY >= heightWork && entrada) {
+
+            
+            
+            if (localStorage.getItem("works") == null) {
+
+                const datos = await getData()
+                localStorage.setItem("works", JSON.stringify(datos) )
+             
+                const loadImages = loadWorks(works, datos)
+
+                console.log(localStorage.getItem("works"))
+ 
+                
+            }else{
+                const datosLS = JSON.parse(localStorage.getItem("works"))
+                
+                const loadImages = loadWorks(works, datosLS)
+                
+            }
+            
+
+
+            entrada = false
+        }
+
         //SVG
         if (scrollY > 50 && scrollY < 1000) {
             document.querySelector(".cajas img").style.width = `${scrollY + 200}px`
+
+
         }
  
  
     }) 
+
 } )(document)

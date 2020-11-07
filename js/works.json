@@ -15,13 +15,13 @@
         "name": "Buy and sell",
         "languages": "FRONTEND AND BACKEND",
         "img": "./img/compraVenta.png" ,
-        "link": "#" 
+        "link": "index.html" 
     }, 
     {
         "name": "EDCAMP",
         "languages": "HTML-CSS-JAVASCRIPT",
         "img": "./img/edCamp.png",
-        "link": "#"  
+        "link": "index.html"  
     },
     {
         "name": "Delivery Web",
@@ -33,13 +33,13 @@
         "name": "Blog",
         "languages": "HTML-CSS-JAVASCRIPT",
         "img": "./img/blog.png",
-        "link": "#"  
+        "link": "index.html"  
     },
     {
         "name": "Blog panel",
         "languages": "HTML-CSS-JAVASCRIPT", 
         "img": "./img/dash-blog.png",
-        "link": "#"  
+        "link": "index.html"  
          
     },
     {
@@ -52,7 +52,7 @@
         "name": "Dashboard",
         "languages": "HTML-CSS-JAVASCRIPT", 
         "img": "./img/dash-casual.png",
-        "link": "#" 
+        "link": "index.html" 
     },
     {
         "name": "Platzi Config",
@@ -64,6 +64,6 @@
         "name": "Inventory system",
         "languages": "FRONTEND AND BACKEND", 
         "img": "./img/solo-cejas.png",
-        "link": "#"   
+        "link": "index.html"   
     }
 ]
