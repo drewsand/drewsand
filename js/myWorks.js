@@ -7,8 +7,6 @@ const getData = async (  ) => {
 ( async () => {
 
 
-
-
     const datos = await getData()
     let html = ''
     const works = document.querySelector(".container-works")
@@ -34,6 +32,7 @@ const getData = async (  ) => {
     works.innerHTML = html
 
     works.addEventListener("click", (e) => {
+        
         const element = e.target
         
         if (e.target.classList.contains("imgWorks")) {

@@ -1,9 +1,11 @@
 ( (d) => {
     const sectionAbout = document.querySelector(".about-me")
     const sectionSkill = document.querySelector(".skills")
+    const sectionSkillRocket = document.querySelector(".skills")
 
     const heightAbout = sectionAbout.getBoundingClientRect().top - 550
     const heightSkill = sectionSkill.getBoundingClientRect().top - 300
+    const heightkillRocket = sectionSkill.getBoundingClientRect().top 
  
 
     const progressSkillAll = [...d.querySelectorAll(".progress-skill")].forEach((el, i) => el.style.transitionDelay = `${i * 0.2}s` )
@@ -41,8 +43,22 @@
             d.querySelector(".skill-sql").style.width = '59%'
             d.querySelector(".skill-wp").style.width = '55%'
 
+            
  
-        }  
+        } 
+
+        //ADDED ANIMATION FOR ROTATE THE ROCKET
+        if (scrollY >= heightkillRocket) {
+
+            rocket.classList.remove("rocketUp")
+            rocket.classList.add("rocketDown")
+
+        }else {
+
+            rocket.classList.remove("rocketDown")
+            rocket.classList.add("rocketUp")
+            
+        } 
 
         //SVG
         if (scrollY > 50 && scrollY < 1000) {

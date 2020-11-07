@@ -8,7 +8,8 @@
 body {
   font-family: 'Itim', cursive;
   background-color: #010615;
-  color: white; }
+  color: white;
+  font-size: 1.150rem; }
 
 ::-webkit-scrollbar {
   width: 0; }
@@ -158,6 +159,7 @@ header {
     align-items: center;
     z-index: var(--z-tooltip);
     right: -200px;
+    font-size: 1rem;
     transition: .4s; }
     header .navegacion-open {
       right: 0;
@@ -260,7 +262,8 @@ header {
       filter: drop-shadow(2px 4px 6px #ffffff); }
 
 .about-me {
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .about-me .circle {
     position: relative;
     overflow: hidden;
@@ -371,6 +374,55 @@ header {
     background: linear-gradient(#ffc107, transparent); }
   .rocket::after {
     filter: blur(20px); }
+
+.rocketFixed {
+  position: sticky;
+  top: 0; }
+
+.rocketDown {
+  animation: rocketDown 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards; }
+
+.rocketUp {
+  animation: rocketUp 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards; }
+
+@keyframes rocketDown {
+  0% {
+    transform: rotate(0); }
+  90% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(180deg) translateY(-20px); } }
+
+@keyframes rocketUp {
+  0% {
+    transform: rotate(180deg) translateY(-20px); }
+  70% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0); } }
+
+body.light-mode {
+  background-color: white;
+  animation: light-mode .5s forwards;
+  font-size: 1.2rem; }
+  body.light-mode .navegacion {
+    font-size: 1rem; }
+    body.light-mode .navegacion a {
+      color: #f59a2a; }
+  body.light-mode .pulso span {
+    background-color: #17167d; }
+  body.light-mode .contacto .redes-sociales a {
+    color: white;
+    background-color: #2c4182; }
+  body.light-mode footer {
+    color: #010615; }
+
+@keyframes light-mode {
+  0% {
+    color: #ffffff; }
+  100% {
+    color: #010615;
+    text-shadow: 0 1px 4px; } }
 
 .preloader {
   position: fixed;
@@ -506,7 +558,7 @@ header {
     background-color: #ec58a8;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    transition: .5s; }
+    transition: .3s; }
 
 footer {
   padding: 2rem;
