@@ -36,11 +36,11 @@
             d.querySelector(".skill-css").style.width = '70%'
             d.querySelector(".skill-bootstrap").style.width = '70%'
             d.querySelector(".skill-materialize").style.width = '55%'
-            d.querySelector(".skill-js").style.width = '65%'
-            d.querySelector(".skill-react").style.width = '12%'
-            d.querySelector(".skill-node").style.width = '8%'
-            d.querySelector(".skill-php").style.width = '57%'
-            d.querySelector(".skill-sql").style.width = '59%'
+            d.querySelector(".skill-js").style.width = '70%'
+            d.querySelector(".skill-react").style.width = '60%'
+            d.querySelector(".skill-node").style.width = '55%'
+            d.querySelector(".skill-php").style.width = '50%'
+            d.querySelector(".skill-sql").style.width = '55%'
             d.querySelector(".skill-wp").style.width = '55%'
 
             
